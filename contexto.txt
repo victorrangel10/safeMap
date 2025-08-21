@@ -1,0 +1,42 @@
+📁 SafeMap - Mapa de Calor de Incidentes na UFES
+
+Nome do Projeto: SafeMap  
+Objetivo: Aplicativo mobile para visualização e registro de incidentes de segurança no campus da UFES.
+Autores: Victor Augusto Fernandes Rangel, Daniel Corona Aguiar
+
+🧭 Contextualização
+
+O SafeMap é um aplicativo desenvolvido para centralizar e visualizar, por meio de um mapa de calor, os relatos de crimes e situações de risco ocorridos no campus da UFES (Universidade Federal do Espírito Santo).
+
+Esses eventos — como furtos, assaltos e agressões — normalmente são compartilhados de forma dispersa, dificultando a prevenção por parte de alunos e funcionários, além de prejudicar a ação da segurança patrimonial e da Polícia Militar.
+
+O app permite que usuários registrem incidentes com localização, horário e categoria, possibilitando que outras pessoas evitem áreas de risco e que dados possam ser utilizados estrategicamente por órgãos de segurança.
+
+👥 Perfis de Usuário
+
+| Tipo de Usuário        | Perfil                           | Necessidade Principal                                      |
+|------------------------|----------------------------------|------------------------------------------------------------|
+| Estudante/Funcionário  | 17–35 anos, smartphone Android/iOS | Ver mapa em tempo real e registrar novos incidentes       |
+| Segurança Patrimonial  | Equipe interna da UFES            | Acesso a dados consolidados para patrulhamento estratégico |
+| Polícia Militar        | Agentes externos                  | Averiguar provas e analisar concentração de ocorrências    |
+
+🧩 Funcionalidades Principais
+
+1. Registro de Incidentes  
+   Formulário com:  
+   - Categoria (Assalto, Furto, Agressão, Outros)  
+   - Breve descrição  
+   - Foto (opcional)  
+   - Geolocalização automática + horário do evento  
+
+2. Mapa de Calor Interativo  
+   - Filtragem por tipo de ocorrência  
+   - Período: últimas 24h, semana ou mês  
+
+3. Alertas em Tempo Real (Push Notifications)  
+   - Envio de alerta quando o usuário entra em uma área considerada "quente"  
+
+4. Moderação e Anonimização  
+   - Moderação automática para reduzir spam  
+   - Nenhum dado pessoal é exibido publicamente  
+
