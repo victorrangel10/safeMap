@@ -86,9 +86,9 @@ public class EventService {
      * @param category Categoria do evento.
      * @return Lista de eventos filtrados.
      */
-    public List<Event> getEventsByCategory(String category) {
-        return eventRepository.findByCategory(category);
-    }
+    // public List<Event> getEventsByCategory(String category) {
+    //     return eventRepository.findByCategory(category);
+    // }
 
     /**
      * Busca eventos registrados nas últimas 24 horas.
