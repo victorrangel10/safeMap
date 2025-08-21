@@ -2,6 +2,8 @@ package br.com.safemap.service;
 
 import br.com.safemap.entity.Event;
 import br.com.safemap.repository.EventRepository;
+
+import org.springframework.http.ResponseEntity;
 //import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -71,9 +73,11 @@ public class EventService {
      * Remove um evento pelo ID.
      *
      * @param id ID do evento a ser removido.
+     * @return 
      */
-    public void deleteEvent(Long id) {
+    public ResponseEntity<Void> deleteEvent(Long id) {
         eventRepository.deleteById(id);
+        return null;
     }
 
     /**

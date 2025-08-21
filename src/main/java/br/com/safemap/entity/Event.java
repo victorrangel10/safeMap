@@ -1,7 +1,7 @@
-package com.safemap.model;
+package br.com.safemap.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Min;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -20,13 +20,8 @@ public class Event {
 
     private LocalDateTime timestamp;
 
-    @Column
-    @jakarta.validation.constraints.Min(-90)
-    @jakarta.validation.constraints.Max(90)
     private Float latitude;
 
-    @jakarta.validation.constraints.Min(-180)
-    @jakarta.validation.constraints.Max(180)
     private Float longitude;
 
     private boolean reviewed = false;
@@ -71,14 +66,7 @@ public class Event {
         this.timestamp = timestamp;
     }
 
-    public Point getLocation() {
-        return location;
-    }
-
-    public void setLocation(Point location) {
-        this.location = location;
-    }
-
+  
     public Float getLatitude() {
         return latitude;
     }
