@@ -1,4 +1,4 @@
-package br.com.safemap.safemap;
+package br.com.safemap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

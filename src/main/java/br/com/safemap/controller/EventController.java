@@ -15,6 +15,7 @@ import br.com.safemap.service.EventService;
 @RestController
 @RequestMapping("/events")
 public class EventController {
+    @SuppressWarnings("FieldMayBeFinal")
     private EventService eventService;
 
     public EventController(EventService eventService) {
