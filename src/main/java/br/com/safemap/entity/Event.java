@@ -24,12 +24,20 @@ public class Event {
 
     private LocalDateTime timestamp;
 
-    private Float latitude;
+    private Double latitude;
 
-    private Float longitude;
+    private Double longitude;
 
     private boolean reviewed = false;
 
+    public Event(String category, String description, double latitude, double longitude, Integer severity) {
+        this.category = category;
+        this.description = description;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.severity = severity;
+    }
+    
     public Long getId() {
         return id;
     }
@@ -71,19 +79,19 @@ public class Event {
     }
 
   
-    public Float getLatitude() {
+    public Double getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(Float latitude) {
+    public void setLatitude(Double latitude) {
         this.latitude = latitude;
     }
 
-    public Float getLongitude() {
+    public Double getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(Float longitude) {
+    public void setLongitude(Double longitude) {
         this.longitude = longitude;
     }
 

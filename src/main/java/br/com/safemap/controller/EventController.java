@@ -22,7 +22,7 @@ public class EventController {
         this.eventService = eventService;
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public Event create(@RequestBody Event event) {
         return eventService.saveEvent(event);
     }
@@ -36,4 +36,6 @@ public class EventController {
     public ResponseEntity<Void> delete(@RequestBody Event event,@PathVariable("id") Long id) {
         return eventService.deleteEvent(id);
     }
+
+    
 }
